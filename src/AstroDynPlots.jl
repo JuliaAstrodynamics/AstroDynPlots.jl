@@ -1,4 +1,4 @@
-module AstrodynamicsPlots
+module AstroDynPlots
 
 # package code goes here
 

@@ -1,4 +1,4 @@
-using AstrodynamicsPlots
+using AstroDynPlots
 using Base.Test
 
 # write your own tests here
