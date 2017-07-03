@@ -1,5 +1,17 @@
 module AstroDynPlots
 
+using AstroDynBase
+using RecipesBase
+
+@recipe function plot(tra::AbstractTrajectory; points=length(tra.times) * 10)
+    t = linspace(tra.times[0], tra.times[end], points)
+    x = tra.array[:,1]
+    y = tra.array[:,2]
+    z = tra.array[:,3]
+    seriestype := :path3d
+    x, y, z
+end
+
 #= function plot{F<:Frame, T<:Timescale, C<:CelestialBody}(tra::Trajectory{F,T,C}) =#
 #=     re = equatorial_radius(constants(C)) =#
 #=     rp = polar_radius(constants(C)) =#
