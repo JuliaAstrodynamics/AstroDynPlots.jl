@@ -1,0 +1,11 @@
+name = "AstroDynPlots"
+uuid = "7ae2ffc7-f934-5fbe-aef9-7bec57bd794e"
+
+[deps]
+AstroBase = "e1773a3a-3ab2-51da-b25a-65b4161c689f"
+PlotlyJS = "f0f68f2c-4968-5e81-91da-67840de0976a"
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
+SmoothingSplines = "102930c3-cf33-599f-b3b1-9a29a5acab30"
+
+[compat]
+julia = "≥ 0.6.0"
